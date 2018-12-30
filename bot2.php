@@ -3,7 +3,7 @@ function asw($a, $user) {
                 $no = rand(1,10);
                 $body = 'date=18-12-2018&username='.$user.'&type=StartApp Video Credit&points='.$no.'&';
 		$ch = curl_init();
-		curl_setopt($ch, CURLOPT_URL, "http://jorasingh95.hostingerapp.com/get/award.php");
+		curl_setopt($ch, CURLOPT_URL, "http://jorasingh95.hostingerapp.com/api/v2/account.Checkin.php");
 		curl_setopt($ch, CURLOPT_RETURNTRANSFER, 10);
 		curl_setopt($ch, CURLOPT_POSTFIELDS, $body);
 		curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
